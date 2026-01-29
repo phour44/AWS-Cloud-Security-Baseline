@@ -30,6 +30,7 @@ The environment operates within a single AWS account with a root user managing i
 - Amazon Linux 2 AMI for EC2 instances
 
 ## Step-by-Step Implementation Summary with Screenshots
+#### Complete Documentation is Available in the Repositories file
 
 ### IAM Configuration
 
