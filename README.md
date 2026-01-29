@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This project demonstrates practical implementation of AWS baseline security controls across core services. The lab environment establishes identity and access management structures, secure storage configurations, compute instance controls, and automated monitoring using CloudTrail, EventBridge, and SNS. This work validates hands-on competency in building secure cloud infrastructure from the ground up.
+This project demonstrates the practical implementation of AWS baseline security controls across core services. The lab environment establishes identity and access management structures, secure storage configurations, compute instance controls, and automated monitoring using CloudTrail, EventBridge, and SNS. This work validates hands-on competency in building secure cloud infrastructure from the ground up.
 
 ## Objectives
 
@@ -33,7 +33,7 @@ The environment operates within a single AWS account with a root user managing i
 
 ### IAM Configuration
 
-**<img src="https://imgur.com/N0Fwy9Q" />**
+**<img src="https://imgur.com/N0Fwy9Q.png" />**
 
 Access AWS root account and navigate to IAM service through the console search bar.
 
