@@ -37,7 +37,7 @@ The environment operates within a single AWS account with a root user managing i
 
 Access AWS root account and navigate to IAM service through the console search bar.
 
-**[Screenshot: IAM Dashboard]**
+**<img width="975" height="469" alt="image" src="https://github.com/user-attachments/assets/63b9eb15-4766-4d29-86bf-225350ccc128" />**
 
 The IAM dashboard displays security recommendations and current user/group status.
 
