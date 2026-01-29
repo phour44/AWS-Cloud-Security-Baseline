@@ -41,65 +41,93 @@ Access AWS root account and navigate to IAM service through the console search b
 
 The IAM dashboard displays security recommendations and current user/group status.
 
-**[Screenshots: Creating Admin User]**
+**<img width="975" height="464" alt="image" src="https://github.com/user-attachments/assets/c149ecd7-f7ef-470d-aef5-ebf3192c929c" />**
+**<img width="975" height="466" alt="image" src="https://github.com/user-attachments/assets/dd316faa-a2a7-40ef-af61-1654bcd69ed3" />**
 
 Create administrative user with console password and attach AdministratorAccess policy directly. This establishes the primary admin identity separate from root.
 
-**[Screenshot: Admin User Login]**
+**<img width="975" height="466" alt="image" src="https://github.com/user-attachments/assets/3ebf9e77-4436-4bc2-8568-66553b4c3f1c" />**
+**<img width="975" height="467" alt="image" src="https://github.com/user-attachments/assets/b23986e1-1052-445d-a918-ec4434206257" />**
+**<img width="975" height="465" alt="image" src="https://github.com/user-attachments/assets/eb858349-5eeb-4981-be8f-5d6a3dc61274" />**
 
 Log into AWS console using the newly created admin IAM user credentials.
 
-**[Screenshots: Creating User Groups]**
+**<img width="975" height="467" alt="image" src="https://github.com/user-attachments/assets/5479b38f-ac9e-4758-954b-147bffb5c428" />**
+**<img width="975" height="461" alt="image" src="https://github.com/user-attachments/assets/254271d9-856f-44db-a4eb-b68eaf044870" />**
+**<img width="975" height="465" alt="image" src="https://github.com/user-attachments/assets/dae49479-4f37-4354-9a89-d6a1867d5295" />**
+**<img width="975" height="459" alt="image" src="https://github.com/user-attachments/assets/bde15c30-7fea-440d-8231-6be7c1f03cb0" />**
 
 Establish user groups such as Sales and Dev teams. Attach AWS managed policies to groups for role-based access control.
 
-**[Screenshots: Creating Standard Users]**
+**<img width="975" height="462" alt="image" src="https://github.com/user-attachments/assets/988268ed-c0da-4137-8797-8ab9c82fe8dd" />**
+**<img width="975" height="462" alt="image" src="https://github.com/user-attachments/assets/06b6770e-6114-4149-85b5-6a8f14d4c1ef" />**
+**<img width="975" height="435" alt="image" src="https://github.com/user-attachments/assets/8de1e1ff-bcbe-4b0b-90be-bd6b340692c9" />**
 
 Provision standard IAM users and assign them to groups. Demonstrate three permission scenarios: group-based, copying from existing user, and direct policy attachment.
 
 ### S3 Bucket Configuration
 
-**[Screenshots: S3 Bucket Creation]**
+**<img width="975" height="307" alt="image" src="https://github.com/user-attachments/assets/f77bf0c0-3590-453e-97fd-114c97c8fc81" />**
 
 Navigate to S3 service and create a new bucket with server-side encryption using Amazon S3 managed keys (SSE-S3).
 
-**[Screenshots: File Upload to S3]**
+**<img width="975" height="462" alt="image" src="https://github.com/user-attachments/assets/06eaeca6-234c-44c8-b0ea-978ef4f09dfd" />**
+**<img width="975" height="464" alt="image" src="https://github.com/user-attachments/assets/386f66d4-4e00-4761-b044-333a78b0c83b" />**
+**<img width="975" height="465" alt="image" src="https://github.com/user-attachments/assets/48df8cdd-818c-4e20-8fe3-4a61691ceb58" />**
 
 Upload test files to the S3 bucket to validate storage functionality and access controls.
 
-**[Screenshots: Assigning S3 Permissions]**
+**<img width="975" height="462" alt="image" src="https://github.com/user-attachments/assets/ba1d2acc-66f5-41bb-9793-c983a3a33142" />**
+**<img width="975" height="463" alt="image" src="https://github.com/user-attachments/assets/d8356885-354b-49e6-8e32-2231da23bd48" />**
+**<img width="975" height="460" alt="image" src="https://github.com/user-attachments/assets/bcc77fbb-ab27-4adc-ba4c-7475c74cb070" />**
 
 Attach AmazonS3FullAccess policy to one user and AmazonS3ReadOnlyAccess to another. Verify permissions by attempting file upload with read-only user.
 
 ### EC2 Instance Deployment
 
-**[Screenshots: EC2 Instance Launch]**
+**<img width="975" height="460" alt="image" src="https://github.com/user-attachments/assets/a16cb44d-6034-4a36-8c7c-b82fe6e4451d" />**
+**<img width="975" height="466" alt="image" src="https://github.com/user-attachments/assets/a7d534ad-13af-4373-8b42-0dd50414717c" />**
+**<img width="975" height="460" alt="image" src="https://github.com/user-attachments/assets/fc153150-6430-46dd-91ba-853b2cb6fede" />**
+**<img width="975" height="463" alt="image" src="https://github.com/user-attachments/assets/7eddc4eb-720d-4e27-a510-85722565cbb7" />**
+**<img width="975" height="462" alt="image" src="https://github.com/user-attachments/assets/805233e4-a3a5-430c-80ae-a91b1395aef4" />**
 
 Launch EC2 instance selecting Amazon Linux 2 AMI and t2.micro instance type. Create RSA key pair for secure SSH access. Configure security group to allow access from any IP.
 
-**[Screenshots: Custom IAM Policy Creation]**
+**<img width="975" height="463" alt="image" src="https://github.com/user-attachments/assets/678fb5de-5aab-4a1e-90e0-250bfddcb021" />**
+**<img width="975" height="461" alt="image" src="https://github.com/user-attachments/assets/232c0393-453d-4499-8dfa-82b18065bad9" />**
 
 Generate custom EC2 policy using AWS Policy Generator. Specify EC2 service, select actions like DescribeInstances and StopInstances, and input instance ARN. Copy generated JSON policy and create inline policy for user Ibrahim.
 
-**[Screenshots: Instance Management]**
+**<img width="975" height="465" alt="image" src="https://github.com/user-attachments/assets/366d410d-5a24-401b-aa94-d4e6c8244b88" />**
+**<img width="975" height="468" alt="image" src="https://github.com/user-attachments/assets/86d74022-9753-42ea-97a1-fe9ebbf4feab" />**
+**<img width="975" height="448" alt="image" src="https://github.com/user-attachments/assets/b17fc362-840e-481f-8fd5-f5e16ef64c06" />**
 
 Demonstrate stopping and terminating EC2 instances under the custom IAM policy constraints.
 
 ### CloudTrail Configuration
 
-**[Screenshots: CloudTrail Setup]**
+**<img width="975" height="467" alt="image" src="https://github.com/user-attachments/assets/1bd03ae1-5cc2-4ee3-b4b3-931a6f59303f" />**
+**<img width="975" height="464" alt="image" src="https://github.com/user-attachments/assets/6e349340-21e6-4b07-bf4c-91b8a06a2b15" />**
+**<img width="975" height="464" alt="image" src="https://github.com/user-attachments/assets/2146f3e1-588c-472d-bb1a-10d351261a86" />**
+**<img width="975" height="463" alt="image" src="https://github.com/user-attachments/assets/1568c124-a46e-415c-953c-5f3434361f0d" />**
 
 Access CloudTrail service and review event history showing all API calls. Create a new trail to log management events. Configure trail to store logs in a dedicated S3 bucket.
 
 ### SNS Configuration
 
-**[Screenshots: SNS Topic and Subscription]**
+**<img width="975" height="462" alt="image" src="https://github.com/user-attachments/assets/04fd75cd-b057-495d-98b1-8ded203a0d9a" />**
+**<img width="975" height="461" alt="image" src="https://github.com/user-attachments/assets/26928fc9-e091-439a-9a28-43beda67ff1e" />**
+**<img width="975" height="460" alt="image" src="https://github.com/user-attachments/assets/8cec586e-1c82-4f1c-a18b-c1e6d682433e" />**
 
 Create SNS topic for security alerts. Configure email subscription and confirm subscription through email verification link.
 
 ### EventBridge Integration
 
-**[Screenshots: EventBridge Rule Creation]**
+**<img width="975" height="463" alt="image" src="https://github.com/user-attachments/assets/d45a8e9e-95a7-4b0f-9978-299ae0a2c09f" />**
+**<img width="975" height="462" alt="image" src="https://github.com/user-attachments/assets/db2ef5e7-1563-487e-8cbb-3fa953c10e17" />**
+**<img width="975" height="464" alt="image" src="https://github.com/user-attachments/assets/ecf675b9-8927-4d4e-aee0-4d63cd59ae1d" />**
+**<img width="975" height="465" alt="image" src="https://github.com/user-attachments/assets/f2cd940e-f073-4793-8f75-800bc6b72f5c" />**
+**<img width="975" height="467" alt="image" src="https://github.com/user-attachments/assets/848676a4-36be-4e0a-adc9-a1f6ad6835e9" />**
 
 Create EventBridge rule to monitor CloudTrail API calls. Configure event pattern to trigger on CreateBucket events. Edit JSON pattern to specify exact event name. Set SNS topic as target for notifications. Validate by creating a new S3 bucket and receiving email alert.
 
